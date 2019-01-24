@@ -1,0 +1,25 @@
+specVersion: 0.0.1
+description: A simple counter
+repository: https://github.com/graphprotocol/example-subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Counter
+    network: mainnet
+    source:
+      address: '0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d'
+      abi: Counter
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.1
+      language: wasm/assemblyscript
+      entities:
+        - Counter
+      abis:
+        - name: Counter
+          file: ./abis/Counter.abi
+      eventHandlers:
+        - event: Incremented(uint256)
+          handler: handleIncremented
+      file: ./src/mapping.ts
