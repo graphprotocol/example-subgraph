@@ -1,11 +1,12 @@
-pragma solidity >0.4.0;
+pragma solidity ^0.5.2;
 
 contract Counter {
   event Incremented(uint256 value);
 
   uint256 public value;
 
-  constructor() public {
+  constructor() public payable
+  {
     value = 0;
   }
 
