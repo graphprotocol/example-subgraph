@@ -1,0 +1,4 @@
+type Counter @entity {
+  id: ID!
+  value: BigInt!
+}
