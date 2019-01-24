@@ -1,15 +1,15 @@
 {
-  "name": "example-subgraph",
+  "name": "example",
   "version": "0.1.0",
   "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
   "scripts": {
     "create": "graph create example --node https://api.staging.thegraph.com/deploy/",
-    "create-local": "graph create example-subgraph --node http://127.0.0.1:8020",
+    "create-local": "graph create example --node http://127.0.0.1:8020",
     "codegen": "graph codegen --debug --output-dir src/types/",
     "build": "graph build --debug",
-    "deploy": "graph deploy example-subgraph --debug --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
-    "deploy-local": "graph deploy example-subgraph --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy": "graph deploy example --debug --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
+    "deploy-local": "graph deploy example --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.6.0",
