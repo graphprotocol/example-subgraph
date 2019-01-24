@@ -8,7 +8,7 @@ dataSources:
     name: Counter
     network: mainnet
     source:
-      address: '0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d'
+      address: '0xe8d7648dd6b3b8b4eb360009745fc0a3c597764b'
       abi: Counter
     mapping:
       kind: ethereum/events
