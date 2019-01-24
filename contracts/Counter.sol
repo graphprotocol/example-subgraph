@@ -1,7 +1,7 @@
 pragma solidity >0.4.0;
 
 contract Counter {
-  event Incremented(uint256);
+  event Incremented(uint256 value);
 
   uint256 public value;
 
