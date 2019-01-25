@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@graphprotocol/graph-cli@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.7.0.tgz#0b74f91442570041223af0ea6fb32c76c402e00e"
-  integrity sha512-HpyXzQATIcUKTYA5IQ8FG4EvoJ+zDKx8pms290hra3EZU/eM927m4diLxnXWVPdDHayfkn6OnkeNSq1GhviTgQ==
+"@graphprotocol/graph-cli@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.7.1.tgz#8a4928018fea82e73d0945154a34ebb8b658b7c2"
+  integrity sha512-xBZOX3GMUJ2lerDx2wCsvJFJHQvaI/JivRycPGrbYcqTl/C0M0euoBJLyBW1M1p3vrod/Uh1wj3jfLn8qNdHSQ==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#ced01216f88a3037d0657a45255dc6df646ff10c"
     chalk "^2.4.1"
