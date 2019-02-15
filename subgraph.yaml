@@ -1,25 +1,27 @@
 specVersion: 0.0.1
-description: A simple counter
-repository: https://github.com/graphprotocol/example-subgraph
+description: Gravatar for Ethereum
+repository: https://github.com/rodventures/gravity-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Counter
+    name: Gravity
     network: mainnet
     source:
-      address: '0xe8d7648dd6b3b8b4eb360009745fc0a3c597764b'
-      abi: Counter
+      address: '0x2E645469f354BB4F5c8a05B3b30A929361cf77eC'
+      abi: Gravity
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:
-        - Counter
+        - Gravatar
       abis:
-        - name: Counter
-          file: ./abis/Counter.abi
+        - name: Gravity
+          file: ./abis/Gravity.abi
       eventHandlers:
-        - event: Incremented(uint256)
-          handler: handleIncremented
+        - event: NewGravatar(uint256,address,string,string)
+          handler: handleNewGravatar
+        - event: UpdatedGravatar(uint256,address,string,string)
+          handler: handleUpdatedGravatar
       file: ./src/mapping.ts

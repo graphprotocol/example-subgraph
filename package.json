@@ -4,7 +4,7 @@
   "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
   "scripts": {
-    "build-contract": "solc contracts/Counter.sol --abi -o abis --overwrite && solc contracts/Counter.sol --bin -o bin --overwrite",
+    "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
     "create": "graph create example --node https://api.thegraph.com/deploy/",
     "create-local": "graph create example --node http://127.0.0.1:8020",
     "codegen": "graph codegen --debug --output-dir src/types/",

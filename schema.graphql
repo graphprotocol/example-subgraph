@@ -1,4 +1,6 @@
-type Counter @entity {
+type Gravatar @entity {
   id: ID!
-  value: BigInt!
+  owner: Bytes!
+  displayName: String!
+  imageUrl: String!
 }
