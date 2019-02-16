@@ -18,7 +18,7 @@ dataSources:
         - Gravatar
       abis:
         - name: Gravity
-          file: ./abis/Gravity.abi
+          file: ./abis/Gravity.json
       eventHandlers:
         - event: NewGravatar(uint256,address,string,string)
           handler: handleNewGravatar
