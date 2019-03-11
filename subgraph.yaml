@@ -1,6 +1,6 @@
 specVersion: 0.0.1
 description: Gravatar for Ethereum
-repository: https://github.com/rodventures/gravity-subgraph
+repository: https://github.com/graphprotocol/example-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
