@@ -21,8 +21,6 @@ const waitForSubgraphToBeSynced = async () => {
     let now = Date.now();
     let timeout = startTime + 10000;
 
-    console.log("Now:", now, "timeout:", timeout);
-
     if (now >= timeout) {
       throw "Timeout while waiting for the subgraph to be synced";
     }
