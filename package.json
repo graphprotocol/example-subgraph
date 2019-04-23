@@ -17,7 +17,7 @@
     "test": "truffle test --network test"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.9.0",
+    "@graphprotocol/graph-cli": "https://github.com/graphprotocol/graph-cli#jannis/integration-testing",
     "@graphprotocol/graph-ts": "^0.9.0",
     "apollo-fetch": "^0.7.0",
     "gluegun": "^3.2.0"
