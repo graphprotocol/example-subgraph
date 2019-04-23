@@ -6,4 +6,5 @@ cache: yarn
 services:
   - docker
 script:
+  # Test the subgraph against graph-node
   - ./node_modules/.bin/graph test "yarn test"
