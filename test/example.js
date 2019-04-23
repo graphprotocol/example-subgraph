@@ -62,7 +62,7 @@ const waitForSubgraphToBeSynced = async () => {
       deployment.synced &&
       deployment.latestEthereumBlockNumber > 0 &&
       deployment.latestEthereumBlockNumber ===
-        deployment.latestEthereumBlocksCount
+        deployment.totalEthereumBlocksCount
     ) {
       return true;
     }
