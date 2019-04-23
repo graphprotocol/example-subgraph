@@ -5,6 +5,8 @@ node_js:
 cache: yarn
 services:
   - docker
+before_install:
+  - sudo apt-get install libsecret-1-dev
 script:
   # Test the subgraph against graph-node
   - ./node_modules/.bin/graph test "yarn test"
