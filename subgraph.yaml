@@ -12,13 +12,20 @@ dataSources:
       abi: Gravity
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.1
+      apiVersion: 0.0.2
       language: wasm/assemblyscript
       entities:
         - Gravatar
       abis:
         - name: Gravity
           file: ./abis/Gravity.json
+      blockHandlers:
+        - handler: handleNewBlock
+          filter:
+            kind: call
+      callHandlers:
+        - function: createGravatar(string,string)
+          handler: handleCreateGravatar
       eventHandlers:
         - event: NewGravatar(uint256,address,string,string)
           handler: handleNewGravatar
