@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@graphprotocol/graph-cli@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.10.0.tgz#205ebabebdd8f3ce2f087f325d2b4553ca8671c6"
-  integrity sha512-4EZnIiv9Ejq8tZ1kuxJtPtkoFBe8HyYG2lgwGbvTNivjNC4o9u6TCWtipmaBz+3PGI1GcP1WdtlASVyouqhdMw==
+"@graphprotocol/graph-cli@^0.11.1":
+  version "0.11.1"
+  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.11.1.tgz#33afbdcb7b3afcfc9c0fbc09eee0982cb7553de5"
+  integrity sha512-L8aji8tmJ3DE2YbcTuarY1jwzTOwc3YZlpBNbQYwnJKQAWk4qZqReB9lRnlVAXqurIaqcd+0mC7PnOXhV/I40g==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
     chalk "^2.4.1"
@@ -26,10 +26,10 @@
   optionalDependencies:
     keytar "^4.3.0"
 
-"@graphprotocol/graph-ts@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.npmjs.org/@graphprotocol/graph-ts/-/graph-ts-0.10.0.tgz#56b1c17ded12b46cff9abb7fec47ee2d662c8388"
-  integrity sha512-3IEdMs2ff4S56PoS8Gekh4PtyjZVDGuHBbf0fqyQOYVFK13syQ96HIutLJ2JNLY3r9u3z7Z6DWo7/oNVFRJYvw==
+"@graphprotocol/graph-ts@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.npmjs.org/@graphprotocol/graph-ts/-/graph-ts-0.11.0.tgz#a9f997497f766a7f178329dae649413fdd5c68f3"
+  integrity sha512-aDgXJcQy7VJcXS6nRs/Ur/yU0THi27uZGxnylo5We0W/n65SEvuPH1b4gARw1+1pZg58karwuWPeI9mzD8A+qw==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
 
@@ -225,17 +225,6 @@ asn1@~0.2.3:
 "assemblyscript@git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3":
   version "0.6.0"
   resolved "git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3"
-  dependencies:
-    "@protobufjs/utf8" "^1.1.0"
-    binaryen "77.0.0-nightly.20190407"
-    glob "^7.1.3"
-    long "^4.0.0"
-    opencollective-postinstall "^2.0.0"
-    source-map-support "^0.5.11"
-
-"assemblyscript@https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3":
-  version "0.6.0"
-  resolved "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
   dependencies:
     "@protobufjs/utf8" "^1.1.0"
     binaryen "77.0.0-nightly.20190407"
