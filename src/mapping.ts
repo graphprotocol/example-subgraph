@@ -1,5 +1,5 @@
-import { NewGravatar, UpdatedGravatar } from './types/Gravity/Gravity'
-import { Gravatar } from './types/schema'
+import { NewGravatar, UpdatedGravatar } from '../generated/Gravity/Gravity'
+import { Gravatar } from '../generated/schema'
 
 export function handleNewGravatar(event: NewGravatar): void {
   let gravatar = new Gravatar(event.params.id.toHex())
