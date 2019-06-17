@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@graphprotocol/graph-cli@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.13.0.tgz#1cdba9e48c2bdf840d858cc2eec5e87cb5dba8f8"
-  integrity sha512-zHHZ7QNAuIGYGsC3BgR2GjgVaNbOBU7H1a5FZR5ShqT75ZdEiu+0KG2/75rOQ3DZhFxU/QVjILlp6mBw2RnWpQ==
+"@graphprotocol/graph-cli@^0.13.3":
+  version "0.13.3"
+  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.13.3.tgz#9348a82528e3f9b445821a6028c78dee97d6ebea"
+  integrity sha512-CCBcpz5rNGgT+t30AODpG2xGrez/sj1Hy7uLYB6s9TM8PizPZaJvEt7h6GgdQ1cFTnPyO4KMSx/dmi6FwXx1Qw==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
     chalk "^2.4.1"
