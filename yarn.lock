@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@graphprotocol/graph-cli@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.npmjs.org/@graphprotocol/graph-cli/-/graph-cli-0.15.0.tgz#85bad509a55e212c2dc8f3e5113cdfc6323224d8"
-  integrity sha512-7wfHRDDxKbOrcp9c71dxqDIYviKPyDvApD1oC51fOWLsm6aFe9mFmZDfF3jp+hIeYvSX6dBwakNAphsX9cc1jA==
+"@graphprotocol/graph-cli@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.16.0.tgz#0829a42a2ec4c122fbdb8bfb482b74e0d27db935"
+  integrity sha512-tTpJc9waeRPzhF/aeWxu4jGW7GonVTQBeubTGVC6B2oFHpADXrQdthPgpmtThexXGHk46q14bHLuiSEm6ZBpkw==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
     chalk "^2.4.1"
@@ -34,10 +34,10 @@
   optionalDependencies:
     keytar "^4.6.0"
 
-"@graphprotocol/graph-ts@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.npmjs.org/@graphprotocol/graph-ts/-/graph-ts-0.15.0.tgz#6a2429f31ec7ac5f582101a75a0e780c6b95c462"
-  integrity sha512-rYrIUDNGdQTxU+UogI5OhjP73LL8B9jwB29jysztaaSRqJumf8DEmftG0K42+7CvWtYfpiZNKpGpKt/xUR80NQ==
+"@graphprotocol/graph-ts@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-ts/-/graph-ts-0.16.0.tgz#a6f5e8a39b7d651887c80bb2422cfb3a0fbf55d7"
+  integrity sha512-zDhlIYlzE0xq5cJkF6fGwshfPR2z6rRZetNCgEclAtDv1uPSQaPQJuiIWL2hpTMjYHLX2OSNxy8F1G69jC708A==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
 
