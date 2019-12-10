@@ -19,9 +19,11 @@ dataSources:
       abis:
         - name: Gravity
           file: ./abis/Gravity.json
-      eventHandlers:
-        - event: NewGravatar(uint256,address,string,string)
-          handler: handleNewGravatar
-        - event: UpdatedGravatar(uint256,address,string,string)
-          handler: handleUpdatedGravatar
+      callHandlers:
+        - function: createGravatar(string,string)
+          handler: handleCreateGravatar
+        - function: updateGravatarName(string)
+          handler: handleUpdateGravatarName
+        - function: updateGravatarImage(string)
+          handler: handleUpdateGravatarImage
       file: ./src/mapping.ts
