@@ -23,9 +23,9 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@graphprotocol/graph-cli@^0.18.0":
+"@graphprotocol/graph-cli@^0.19.0":
   version "0.19.0"
-  resolved "https://testnet.thegraph.com/npm-registry/@graphprotocol%2fgraph-cli/-/graph-cli-0.19.0.tgz#c5c330f3ef9bb56ee5bec1e9da998638049dc0d3"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.19.0.tgz#c5c330f3ef9bb56ee5bec1e9da998638049dc0d3"
   integrity sha512-rG6udMjMyXtCgX1oYyteM3ohecLV8JZqlQLzc8BSfw/g6+6dAVey6KQkJ04MRYJCv2VxrUVTYXu1AxzhXPJMkQ==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
@@ -51,9 +51,9 @@
   optionalDependencies:
     keytar "^5.0.0"
 
-"@graphprotocol/graph-ts@^0.18.0":
+"@graphprotocol/graph-ts@^0.19.0":
   version "0.19.0"
-  resolved "https://testnet.thegraph.com/npm-registry/@graphprotocol%2fgraph-ts/-/graph-ts-0.19.0.tgz#e1ea3abcf94b91b36624a0821c6561d68720397f"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-ts/-/graph-ts-0.19.0.tgz#e1ea3abcf94b91b36624a0821c6561d68720397f"
   integrity sha512-9dRwZF/jMHjIC/4jZDl8uUV3vHbXgHZV2m6728JbYcbjt4Kaw73cIxVqrsXHyDNVkVaIkZ/yorQ37pY2suLddg==
   dependencies:
     assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
