@@ -1,6 +1,6 @@
-specVersion: 0.0.2
-description: Gravatar for Ethereum
-repository: https://github.com/graphprotocol/example-subgraph
+specVersion: 0.0.1
+description: Climate Data for Ethereum
+repository: https://github.com/data-flep/clima-poc
 schema:
   file: ./schema.graphql
 dataSources:
