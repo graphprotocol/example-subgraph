@@ -23,12 +23,12 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@graphprotocol/graph-cli@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.20.0.tgz#52d907f906d4845c42ef2d8063fe0f624db95c09"
-  integrity sha512-uUeq54fIdBvj3SVA4U1qArAG0vZuw3Qnw0J7o/kQ712G8YtJ6l2rkmt5IaS35zQHlnNjAmFd1WJ095lSemlHog==
+"@graphprotocol/graph-cli@^0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.20.1.tgz#659459091821861987e6596b46e692ca4a3c2b3b"
+  integrity sha512-vT8pKz2OMyLcYGiFK8RVUk0HHYT9hYYdGwlYAOUON3HHIr51EjSbvTHW7ezBfneFurzj9z0Xdezwywf/N1ay0Q==
   dependencies:
-    assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
+    assemblyscript "git+https://github.com/AssemblyScript/assemblyscript.git#v0.6"
     chalk "^3.0.0"
     chokidar "^3.0.2"
     debug "^4.1.1"
@@ -51,12 +51,12 @@
   optionalDependencies:
     keytar "^7.4.0"
 
-"@graphprotocol/graph-ts@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-ts/-/graph-ts-0.20.0.tgz#ed31ffd59a6aa9703a1ec5079f137a81220443cb"
-  integrity sha512-+R0Tu/MD4Fiq0Fo+v1l+xznz+ZrciQKWlzMtXjDrhM70vlMNVL9wDmf90MVFYpslgqIfw024hT6XwlmyNyOWbQ==
+"@graphprotocol/graph-ts@^0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-ts/-/graph-ts-0.20.1.tgz#42a45158c5904224f28d3cf6c5d1ffc876720f81"
+  integrity sha512-JATb0tERXt+JZUYuW9rwfnLzIM4EOBHf/EEZir5JMiIVMP55CoOyQGAwH2dvKSm5O8WQ1BfdbnOvk7YNVMFHsg==
   dependencies:
-    assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
+    assemblyscript "git+https://github.com/AssemblyScript/assemblyscript.git#v0.6"
 
 "@protobufjs/utf8@^1.1.0":
   version "1.1.0"
@@ -324,9 +324,9 @@ asn1@~0.2.3:
   dependencies:
     safer-buffer "~2.1.0"
 
-"assemblyscript@git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3":
+"assemblyscript@git+https://github.com/AssemblyScript/assemblyscript.git#v0.6":
   version "0.6.0"
-  resolved "git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3"
+  resolved "git+https://github.com/AssemblyScript/assemblyscript.git#3ed76a97f05335504166fce1653da75f4face28f"
   dependencies:
     "@protobufjs/utf8" "^1.1.0"
     binaryen "77.0.0-nightly.20190407"
