@@ -23,12 +23,12 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@graphprotocol/graph-cli@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.20.0.tgz#52d907f906d4845c42ef2d8063fe0f624db95c09"
-  integrity sha512-uUeq54fIdBvj3SVA4U1qArAG0vZuw3Qnw0J7o/kQ712G8YtJ6l2rkmt5IaS35zQHlnNjAmFd1WJ095lSemlHog==
+"@graphprotocol/graph-cli@^0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.20.1.tgz#659459091821861987e6596b46e692ca4a3c2b3b"
+  integrity sha512-vT8pKz2OMyLcYGiFK8RVUk0HHYT9hYYdGwlYAOUON3HHIr51EjSbvTHW7ezBfneFurzj9z0Xdezwywf/N1ay0Q==
   dependencies:
-    assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
+    assemblyscript "git+https://github.com/AssemblyScript/assemblyscript.git#v0.6"
     chalk "^3.0.0"
     chokidar "^3.0.2"
     debug "^4.1.1"
@@ -324,9 +324,22 @@ asn1@~0.2.3:
   dependencies:
     safer-buffer "~2.1.0"
 
-"assemblyscript@git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3":
+"assemblyscript@git+https://github.com/AssemblyScript/assemblyscript.git#v0.6":
   version "0.6.0"
-  resolved "git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3"
+  uid "3ed76a97f05335504166fce1653da75f4face28f"
+  resolved "git+https://github.com/AssemblyScript/assemblyscript.git#3ed76a97f05335504166fce1653da75f4face28f"
+  dependencies:
+    "@protobufjs/utf8" "^1.1.0"
+    binaryen "77.0.0-nightly.20190407"
+    glob "^7.1.3"
+    long "^4.0.0"
+    opencollective-postinstall "^2.0.0"
+    source-map-support "^0.5.11"
+
+"assemblyscript@https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3":
+  version "0.6.0"
+  uid "36040d5b5312f19a025782b5e36663823494c2f3"
+  resolved "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
   dependencies:
     "@protobufjs/utf8" "^1.1.0"
     binaryen "77.0.0-nightly.20190407"
@@ -4863,9 +4876,9 @@ tar-stream@^2.0.1, tar-stream@^2.1.4:
     readable-stream "^3.1.1"
 
 tar@^4.0.2:
-  version "4.4.13"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
-  integrity sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
+  version "4.4.15"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.15.tgz#3caced4f39ebd46ddda4d6203d48493a919697f8"
+  integrity sha512-ItbufpujXkry7bHH9NpQyTXPbJ72iTlXgkBAYsAjDXk3Ds8t/3NfO5P4xZGy7u+sYuQUbimgzswX4uQIEeNVOA==
   dependencies:
     chownr "^1.1.1"
     fs-minipass "^1.2.5"
