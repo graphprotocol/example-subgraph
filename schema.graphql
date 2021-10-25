@@ -1,6 +1,35 @@
-type Gravatar @entity {
+type BlockEvent @entity {
   id: ID!
-  owner: Bytes!
-  displayName: String!
-  imageUrl: String!
+  number: BigInt!
+
+  height: BigInt!
+  prevHeight: BigInt!
+  blockOrdinal: BigInt!
+  epochId: Bytes!
+  nextEpochId: Bytes!
+  chunksIncluded: BigInt!
+  hash: Bytes!
+  prevHash: Bytes!
+  timestampNanosec: BigInt!
+  prevStateRoot: Bytes!
+  chunkReceiptsRoot: Bytes!
+  chunkHeadersRoot: Bytes!
+  chunkTxRoot: Bytes!
+  outcomeRoot: Bytes!
+  challengesRoot: Bytes!
+  randomValue: Bytes!
+  gasPrice: BigInt!
+  totalSupply: BigInt!
+  lastFinalBlock: Bytes!
+  lastDsFinalBlock: Bytes!
+  nextBpHash: Bytes!
+  blockMerkleRoot: Bytes!
+  epochSyncDataHash: Bytes!
+  latestProtocolVersion: Int!
+
+  # chunkMask: Array!
+  # challengesResult: Array!
+  # approvals: Array!
+  # signature: Signature!
+  # validatorProposals: Array!
 }
