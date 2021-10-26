@@ -1,6 +1,11 @@
-type BlockEvent @entity {
+type Greeter @entity {
   id: ID!
-  number: BigInt
-  hash: Bytes
-  timestampNanosec: BigInt
+  name: String!
+  greetings: [Greeting!] @derivedFrom(field: "greeter")
+}
+
+type Greeting @entity {
+  id: ID!
+  greeter: Greeter!
+  timestamp: BigInt!
 }

@@ -1,12 +1,39 @@
-import { near, BigInt } from "@graphprotocol/graph-ts";
-import { BlockEvent } from "../generated/schema";
+import { near, BigInt, log } from "@graphprotocol/graph-ts";
+import { Greeter, Greeting } from "../generated/schema";
 
-export function handleBlock(block: near.Block): void {
-  const header = block.header;
-  let event = new BlockEvent(header.hash.toHexString());
-  event.number = BigInt.fromI32(header.height as i32);
-  event.hash = block.header.hash;
-  event.timestampNanosec = BigInt.fromI32(block.header.timestampNanosec as i32);
+export function handleReceipt(receipt: near.ReceiptWithOutcome): void {
+  const actions = receipt.receipt.actions;
+  for (let i = 0; i < actions.length; i++) {
+    handleAction(actions[i], receipt.receipt, receipt.block.header);
+  }
+}
 
-  event.save();
+function handleAction(
+  action: near.ActionValue,
+  receipt: near.ActionReceipt,
+  blockHeader: near.BlockHeader
+): void {
+  if (action.kind != near.ActionKind.FUNCTION_CALL) {
+    log.info("Early return: {}", ["Not a function call"]);
+    return;
+  }
+
+  const functionCall = action.toFunctionCall();
+  if (functionCall.methodName == "sayGm") {
+    log.info("FunctionCall is: {}", [functionCall.methodName]);
+
+    let greeter = Greeter.load(receipt.signerId);
+    if (greeter == null) {
+      greeter = new Greeter(receipt.signerId);
+      greeter.name = receipt.signerId;
+      greeter.save();
+    }
+
+    const greeting = new Greeting(receipt.id.toBase58());
+    greeting.greeter = greeter.id;
+    greeting.timestamp = BigInt.fromI32(blockHeader.timestampNanosec as i32);
+    greeting.save();
+  } else {
+    log.info("Not processed - FunctionCall is: {}", [functionCall.methodName]);
+  }
 }
