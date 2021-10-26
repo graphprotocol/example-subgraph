@@ -1,5 +1,6 @@
 specVersion: 0.0.4
 description: NEAR Blocks Indexing
+repository: https://github.com/graphprotocol/example-subgraph/tree/near-blocks-example
 schema:
   file: ./schema.graphql
 dataSources:
