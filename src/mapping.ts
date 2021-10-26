@@ -20,8 +20,6 @@ function handleAction(
 
   const functionCall = action.toFunctionCall();
   if (functionCall.methodName == "sayGm") {
-    log.info("FunctionCall is: {}", [functionCall.methodName]);
-
     let greeter = Greeter.load(receipt.signerId);
     if (greeter == null) {
       greeter = new Greeter(receipt.signerId);
