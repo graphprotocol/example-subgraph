@@ -29,7 +29,7 @@ function handleAction(
 
     const greeting = new Greeting(receipt.id.toBase58());
     greeting.greeter = greeter.id;
-    greeting.timestamp = BigInt.fromI32(blockHeader.timestampNanosec as i32);
+    greeting.timestamp = BigInt.fromU64(blockHeader.timestampNanosec);
     greeting.save();
   } else {
     log.info("Not processed - FunctionCall is: {}", [functionCall.methodName]);
