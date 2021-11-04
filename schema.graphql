@@ -3,4 +3,5 @@ type BlockEvent @entity {
   number: BigInt
   hash: Bytes
   timestampNanosec: BigInt
+  gasPrice: BigInt
 }
