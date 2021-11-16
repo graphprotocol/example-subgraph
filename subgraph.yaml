@@ -1,5 +1,5 @@
 specVersion: 0.0.4
-description: NEAR Blocks Indexing
+description: NEAR Blocks
 repository: https://github.com/graphprotocol/example-subgraph/tree/near-blocks-example
 schema:
   file: ./schema.graphql
@@ -8,7 +8,7 @@ dataSources:
     name: blocks
     network: near-mainnet
     source:
-      startBlock: 10662188
+      startBlock: 0
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
