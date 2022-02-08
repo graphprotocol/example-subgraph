@@ -1,22 +1,14 @@
-import { NewGravatar, UpdatedGravatar } from '../generated/Gravity/Gravity'
-import { Gravatar } from '../generated/schema'
+import {
+  DataSourceContext,
+  Address,
+  dataSource,
+  BigDecimal,
+  BigInt,
+} from "@graphprotocol/graph-ts";
+import { ethereum } from "@graphprotocol/graph-ts/chain/ethereum";
 
-export function handleNewGravatar(event: NewGravatar): void {
-  let gravatar = new Gravatar(event.params.id.toHex())
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
-}
-
-export function handleUpdatedGravatar(event: UpdatedGravatar): void {
-  let id = event.params.id.toHex()
-  let gravatar = Gravatar.load(id)
-  if (gravatar == null) {
-    gravatar = new Gravatar(id)
+export function handleBlock(block: ethereum.Block): void {
+  if (block.number.toBigDecimal() > new BigDecimal(BigInt.fromI64(10999999))) {
+    assert(false)
   }
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
 }
