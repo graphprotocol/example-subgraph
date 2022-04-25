@@ -1,6 +1,5 @@
-type Gravatar @entity {
+type Block @entity {
   id: ID!
-  owner: Bytes!
-  displayName: String!
-  imageUrl: String!
+  number: BigInt
+  timestamp: BigInt
 }

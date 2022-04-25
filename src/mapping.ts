@@ -1,22 +1,13 @@
-import { NewGravatar, UpdatedGravatar } from '../generated/Gravity/Gravity'
-import { Gravatar } from '../generated/schema'
+import { BigInt, tendermint } from "@graphprotocol/graph-ts";
+import { Block } from "../generated/schema";
 
-export function handleNewGravatar(event: NewGravatar): void {
-  let gravatar = new Gravatar(event.params.id.toHex())
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
-}
+export function handleBlock(el: tendermint.EventList): void {
+  const header = el.newBlock.block.header;
+  const hash = el.newBlock.blockId.hash.toHexString();
+  const height = BigInt.fromString(header.height.toString());
 
-export function handleUpdatedGravatar(event: UpdatedGravatar): void {
-  let id = event.params.id.toHex()
-  let gravatar = Gravatar.load(id)
-  if (gravatar == null) {
-    gravatar = new Gravatar(id)
-  }
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
+  const block = new Block(hash);
+  block.number = height;
+  block.timestamp = BigInt.fromString(header.time.seconds.toString());
+  block.save();
 }
