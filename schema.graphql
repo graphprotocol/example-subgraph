@@ -1,6 +1,5 @@
-type Gravatar @entity {
+type Reward @entity {
   id: ID!
-  owner: Bytes!
-  displayName: String!
-  imageUrl: String!
+  amount: String
+  validator: String
 }
