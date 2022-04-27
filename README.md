@@ -1,4 +1,4 @@
-# Cosmos Block Handler Example Subgraph
+# Block Filtering Example
 
 This example subgraph stores `Block` objects that represent blocks appended to the Cosmos Hub chain. This is a very simple implementation where just the block number and the block timestamp is saved to the store.
 
