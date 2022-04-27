@@ -1,4 +1,4 @@
-# Cosmos Transaction Handler Example Subgraph
+# Validator Delegations Example
 
 This example subgraph stores `Delegation` objects that represent delegations being made in the Cosmos Hub chain. In order to do that, the handler function filters all messages within the transaction and filters them in order to decode and save just the ones that represent a delegation in the chain.
 
