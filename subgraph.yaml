@@ -1,10 +1,10 @@
-specVersion: 0.0.2
+specVersion: 0.0.5
 description: Cosmos Event Example
 repository: https://github.com/figment-networks/example-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: tendermint
+  - kind: cosmos
     name: EventHandlerExample
     network: cosmoshub-4
     source:

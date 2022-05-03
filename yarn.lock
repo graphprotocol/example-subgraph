@@ -160,9 +160,9 @@
     "@ethersproject/logger" "^5.6.0"
 
 "@ethersproject/signing-key@^5.6.0":
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/@ethersproject/signing-key/-/signing-key-5.6.0.tgz#4f02e3fb09e22b71e2e1d6dc4bcb5dafa69ce042"
-  integrity sha512-S+njkhowmLeUu/r7ir8n78OUKx63kBdMCPssePS89So1TH4hZqnWFsThEd/GiXYp9qMxVrydf7KdM9MTGPFukA==
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@ethersproject/signing-key/-/signing-key-5.6.1.tgz#31b0a531520616254eb0465b9443e49515c4d457"
+  integrity sha512-XvqQ20DH0D+bS3qlrrgh+axRMth5kD1xuvqUQUTeezxUTXBOeR6hWz2/C6FBEu39FRytyybIWrYf7YLSAKr1LQ==
   dependencies:
     "@ethersproject/bytes" "^5.6.0"
     "@ethersproject/logger" "^5.6.0"
@@ -206,9 +206,9 @@
     "@ethersproject/properties" "^5.6.0"
     "@ethersproject/strings" "^5.6.0"
 
-"@graphprotocol/graph-cli@https://github.com/figment-networks/graph-cli.git#tendermint":
+"@graphprotocol/graph-cli@https://github.com/figment-networks/graph-cli.git#cosmos":
   version "0.29.0"
-  resolved "https://github.com/figment-networks/graph-cli.git#218f878dfd7595eeaf9bb8e89c3fdd24d28d9108"
+  resolved "https://github.com/figment-networks/graph-cli.git#15695885af28991265df193386d3a236e13dae1a"
   dependencies:
     assemblyscript "0.19.10"
     binary-install-raw "0.0.13"
@@ -236,11 +236,10 @@
     which "2.0.2"
     yaml "1.9.2"
 
-"@graphprotocol/graph-ts@https://github.com/figment-networks/graph-ts.git#feature/GRAPH-306":
-  version "0.26.0"
-  resolved "https://github.com/figment-networks/graph-ts.git#97bfc7f7ae04c521580b78a56ba6df0443e482f4"
+"@graphprotocol/graph-ts@https://github.com/figment-networks/graph-ts.git#cosmos":
+  version "0.27.0-alpha.0"
+  resolved "https://github.com/figment-networks/graph-ts.git#99f26e493e3bad84fdbc598352625b23e102daab"
   dependencies:
-    as-proto "^v0.2.0"
     assemblyscript "0.19.10"
 
 "@types/bn.js@^5.1.0":
@@ -286,9 +285,9 @@
   integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
 
 "@types/node@*":
-  version "17.0.29"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.29.tgz#7f2e1159231d4a077bb660edab0fde373e375a3d"
-  integrity sha512-tx5jMmMFwx7wBwq/V7OohKDVb/JwJU5qCVkeLMh1//xycAJ/ESuw9aJ9SEtlCZDYi2pBfe4JkisSoAtbOsBNAA==
+  version "17.0.31"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.31.tgz#a5bb84ecfa27eec5e1c802c6bbf8139bdb163a5d"
+  integrity sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==
 
 "@types/node@^10.0.3":
   version "10.17.60"
@@ -434,7 +433,7 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-as-proto@^0.2.2, as-proto@^v0.2.0:
+as-proto@^0.2.2:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/as-proto/-/as-proto-0.2.3.tgz#34107a1051e746324e258062822cb9e18b58e8c4"
   integrity sha512-JwWFcTBYVTOzJEMqXtZfU/L9bYzR6rrLFJBA1DC4kRs0zE12titZtWhpnBAAmV27dhMSWauqOBJgbt5OrK2rcw==
