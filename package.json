@@ -13,8 +13,8 @@
     "remove-local": "graph remove cosmos-example --node http://localhost:8020"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "https://github.com/figment-networks/graph-cli.git#tendermint",
-    "@graphprotocol/graph-ts": "https://github.com/figment-networks/graph-ts.git#feature/GRAPH-306"
+    "@graphprotocol/graph-cli": "https://github.com/figment-networks/graph-cli.git#cosmos",
+    "@graphprotocol/graph-ts": "https://github.com/figment-networks/graph-ts.git#cosmos"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
