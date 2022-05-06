@@ -5,7 +5,7 @@ This example subgraph stores `Reward` objects that represent rewards received by
 By running this example subgraph, and with the following query, you can retrieve all the rewards received by the [Figment](https://atomscan.com/validators/cosmosvaloper1hjct6q7npsspsg3dgvzk3sdf89spmlpfdn6m9d) validator, and the amounts of each of the rewards:
 
 ```
-query FigmentRewards($validatorAddress: String!) {
+query ValidatorRewards($validatorAddress: String!) {
   rewards(where: {validator: $validatorAddress}) {
     validator,
     amount
