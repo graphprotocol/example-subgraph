@@ -1,22 +1,15 @@
-import { NewGravatar, UpdatedGravatar } from '../generated/Gravity/Gravity'
-import { Gravatar } from '../generated/schema'
+import { cosmos } from "@graphprotocol/graph-ts";
+import { Reward } from "../generated/schema";
 
-export function handleNewGravatar(event: NewGravatar): void {
-  let gravatar = new Gravatar(event.params.id.toHex())
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
-}
+export function handleReward(eventData: cosmos.EventData): void {
+  const height = eventData.block.header.height;
+  const amount = eventData.event.attributes[0].value;
+  const validator = eventData.event.attributes[1].value;
 
-export function handleUpdatedGravatar(event: UpdatedGravatar): void {
-  let id = event.params.id.toHex()
-  let gravatar = Gravatar.load(id)
-  if (gravatar == null) {
-    gravatar = new Gravatar(id)
-  }
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
+  let reward = new Reward(`${height}-${validator}`);
+
+  reward.amount = amount;
+  reward.validator = validator;
+
+  reward.save();
 }
