@@ -1,26 +1,24 @@
 {
   "name": "cosmos-transaction-example",
   "version": "0.1.0",
-  "repository": "https://github.com/figment-networks/example-subgraph",
+  "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
   "scripts": {
-    "create": "graph create example --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create cosmos-example --node http://localhost:8020",
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy cosmos-example -l v0.1.0 --ipfs http://localhost:5001 --node http://localhost:8020",
-    "remove-local": "graph remove cosmos-example --node http://localhost:8020"
+    "create-local": "graph create cosmos-transaction-example --node http://localhost:8020",
+    "deploy-local": "graph deploy cosmos-transaction-example -l v0.1.0 --ipfs http://localhost:5001 --node http://localhost:8020",
+    "remove-local": "graph remove cosmos-transaction-example --node http://localhost:8020",
+    "create": "graph create cosmos-transaction-example --node https://api.thegraph.com/deploy/",
+    "deploy": "graph deploy cosmos-transaction-example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "https://github.com/figment-networks/graph-cli.git#cosmos",
-    "@graphprotocol/graph-ts": "https://github.com/figment-networks/graph-ts.git#cosmos",
-    "graph-cosmos-ts": "https://github.com/figment-networks/graph-cosmos-ts"
+    "@graphprotocol/graph-ts": "https://github.com/figment-networks/graph-ts.git#cosmos"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
-    "pretty-error": "^4.0.0",
-    "as-proto": "^0.2.2"
+    "as-proto": "^0.2.3"
   }
 }
