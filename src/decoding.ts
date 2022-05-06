@@ -1,4 +1,4 @@
-import {Protobuf, Reader} from "as-proto";
+import { Protobuf, Reader } from "as-proto";
 
 export function decodeMsgDelegate(a: Uint8Array): MsgDelegate {
   return Protobuf.decode<MsgDelegate>(a, MsgDelegate.decode);
