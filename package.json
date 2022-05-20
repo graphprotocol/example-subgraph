@@ -13,8 +13,8 @@
     "deploy": "graph deploy cosmos-event-example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "https://github.com/figment-networks/graph-cli.git#cosmos",
-    "@graphprotocol/graph-ts": "https://github.com/figment-networks/graph-ts.git#cosmos"
+    "@graphprotocol/graph-cli": "^0.30.0",
+    "@graphprotocol/graph-ts": "^0.27.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
