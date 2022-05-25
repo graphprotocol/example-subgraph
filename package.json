@@ -4,6 +4,8 @@
   "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
   "scripts": {
+    "prepare:cosmoshub": "mustache config/cosmoshub.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:osmosis": "mustache config/osmosis.json subgraph.template.yaml > subgraph.yaml",
     "codegen": "graph codegen",
     "build": "graph build",
     "create-local": "graph create cosmos-event-example --node http://localhost:8020",
@@ -14,7 +16,8 @@
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.0",
-    "@graphprotocol/graph-ts": "^0.27.0"
+    "@graphprotocol/graph-ts": "^0.27.0",
+    "mustache": "^4.2.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
