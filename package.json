@@ -1,5 +1,5 @@
 {
-  "name": "cosmos-event-example",
+  "name": "cosmos-validator-rewards",
   "version": "0.1.0",
   "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
@@ -8,11 +8,11 @@
     "prepare:osmosis": "mustache config/osmosis.json subgraph.template.yaml > subgraph.yaml",
     "codegen": "graph codegen",
     "build": "graph build",
-    "create-local": "graph create cosmos-event-example --node http://localhost:8020",
-    "deploy-local": "graph deploy cosmos-event-example -l v0.1.0 --ipfs http://localhost:5001 --node http://localhost:8020",
-    "remove-local": "graph remove cosmos-event-example --node http://localhost:8020",
-    "create": "graph create cosmos-event-example --node https://api.thegraph.com/deploy/",
-    "deploy": "graph deploy cosmos-event-example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
+    "create-local": "graph create cosmos-validator-rewards --node http://localhost:8020",
+    "deploy-local": "graph deploy cosmos-validator-rewards -l v0.1.0 --ipfs http://localhost:5001 --node http://localhost:8020",
+    "remove-local": "graph remove cosmos-validator-rewards --node http://localhost:8020",
+    "create": "graph create cosmos-validator-rewards --node https://api.thegraph.com/deploy/",
+    "deploy": "graph deploy cosmos-validator-rewards --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.0",
