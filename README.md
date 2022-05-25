@@ -29,4 +29,5 @@ query ValidatorRewards($validatorAddress: String!) {
     "validatorAddress": "cosmosvaloper1hjct6q7npsspsg3dgvzk3sdf89spmlpfdn6m9d"
 }
 ```
+
 For more information see the docs on https://thegraph.com/docs/.
