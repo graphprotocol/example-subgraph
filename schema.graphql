@@ -1,6 +1,13 @@
-type Gravatar @entity {
+type Token @entity {
   id: ID!
-  owner: Bytes!
-  displayName: String!
-  imageUrl: String!
+  amount: String
+  denom: String
+}
+
+type TokenSwap @entity {
+  id: ID!
+  sender: String
+  poolId: String
+  tokenIn: Token
+  tokenOut: Token
 }
