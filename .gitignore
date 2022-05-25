@@ -1,5 +1,8 @@
-build/
-generated/
+/build/
+/generated/
+
+# The generated subgraph manifest
+/subgraph.yaml
 
 # Logs
 logs
