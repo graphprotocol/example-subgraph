@@ -6,11 +6,11 @@ This example subgraph stores `Block` objects that represent blocks appended to a
 
 The subgraph is compatible with multiple Cosmos networks so before building the subgraph you need to generate a manifest file for the network of your choice. In case of the Cosmos Hub network, run the following command:
 
-```bash
+```shell
 $ yarn prepare:cosmoshub
 ```
 
-For the list of supported networks, see the scripts in the [`package.json`](package.json#L7) file.
+For the list of supported networks, see the scripts in the [`package.json`](package.json) file.
 
 ## Querying the subgraph
 
