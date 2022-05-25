@@ -1,5 +1,5 @@
 specVersion: 0.0.5
-description: Osmosis Validator Rewards Example
+description: Osmosis Token Swaps Example
 repository: https://github.com/graphprotocol/example-subgraph
 schema:
   file: ./schema.graphql
