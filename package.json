@@ -1,26 +1,26 @@
 {
-  "name": "example",
+  "name": "cosmos-validator-rewards",
   "version": "0.1.0",
   "repository": "https://github.com/graphprotocol/example-subgraph",
   "license": "MIT",
   "scripts": {
-    "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
-    "create": "graph create example --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create example --node http://127.0.0.1:8020",
+    "prepare:cosmoshub": "mustache config/cosmoshub.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:osmosis": "mustache config/osmosis.json subgraph.template.yaml > subgraph.yaml",
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy example --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy example --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020"
+    "create-local": "graph create cosmos-validator-rewards --node http://localhost:8020",
+    "deploy-local": "graph deploy cosmos-validator-rewards -l v0.1.0 --ipfs http://localhost:5001 --node http://localhost:8020",
+    "remove-local": "graph remove cosmos-validator-rewards --node http://localhost:8020",
+    "create": "graph create cosmos-validator-rewards --node https://api.thegraph.com/deploy/",
+    "deploy": "graph deploy cosmos-validator-rewards --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.28.1",
-    "@graphprotocol/graph-ts": "^0.26.0"
+    "@graphprotocol/graph-cli": "^0.30.0",
+    "@graphprotocol/graph-ts": "^0.27.0",
+    "mustache": "^4.2.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "babel-register": "^6.26.0",
-    "truffle": "^5.0.4",
-    "truffle-contract": "^4.0.5",
-    "truffle-hdwallet-provider": "^1.0.4"
+    "babel-register": "^6.26.0"
   }
 }
