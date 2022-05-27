@@ -1,6 +1,12 @@
-type Gravatar @entity {
+type Delegation @entity {
   id: ID!
-  owner: Bytes!
-  displayName: String!
-  imageUrl: String!
+  delegatorAddress: String
+  validatorAddress: String
+  amount: Coin
+}
+
+type Coin @entity {
+  id: ID!
+  denom: String
+  amount: String
 }
