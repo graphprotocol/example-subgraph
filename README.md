@@ -10,4 +10,16 @@ To be able to build an Arweave subgraph, you need a graph-cli version of 0.30.2 
 npm-update -g i @graphprotocol/graph-cli
 ```
 
+### Querying the Subgraph
+With the following query, you can retrieve all the appended blocks between two dates:
+```graphql
+query BlocksBetweenDates($timestamp_start: BigInt!, $timestamp_end: BigInt!) {
+  blocks(where: {timestamp_gt: $timestamp_start, timestamp_lt: $timestamp_end}) {
+    id
+    timestamp
+    height
+  }
+}
+```
+
 For more information see the docs on https://thegraph.com/docs/.
