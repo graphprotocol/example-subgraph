@@ -25,7 +25,7 @@ type Block @entity {
 type Transaction @entity {
   id: ID!
 
-  block: Bytes!
+  block: Block!
   tx_id: Bytes!
   last_tx: Bytes!
   owner: Bytes!
