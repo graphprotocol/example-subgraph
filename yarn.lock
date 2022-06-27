@@ -204,12 +204,11 @@
     "@ethersproject/bytes" "^5.6.0"
     "@ethersproject/logger" "^5.6.0"
     "@ethersproject/properties" "^5.6.0"
-    "@ethersproject/strings" "^5.6.0"
+    "@ethersproject/strings" "^5.6.1"
 
-"@graphprotocol/graph-cli@^0.30.2":
-  version "0.30.2"
-  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-cli/-/graph-cli-0.30.2.tgz#b48be217d961ace9b37284a24e1bb669ed340fd0"
-  integrity sha512-qbH5JnSlPUfE20pG/xBAWbh70wQ8J/QeNoWt8fN9OHKEJc+5emdMfC30tVU4/Q4pJ+nC6DHSli8znZWZpCD7EA==
+"@graphprotocol/graph-cli@https://github.com/figment-networks/graph-cli.git#cosmos-v1.1":
+  version "0.30.0"
+  resolved "https://github.com/figment-networks/graph-cli.git#1226ed34a131d6ec77eeada846ea3f9c5db3d326"
   dependencies:
     assemblyscript "0.19.10"
     binary-install-raw "0.0.13"
@@ -244,36 +243,11 @@
   dependencies:
     assemblyscript "0.19.10"
 
-"@sindresorhus/is@^0.14.0":
-  version "0.14.0"
-  resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-0.14.0.tgz"
-  integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
-
-"@szmarczak/http-timer@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/@szmarczak/http-timer/-/http-timer-1.1.2.tgz"
-  integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
+"@graphprotocol/juno-ts@https://github.com/figment-networks/graph-juno-ts.git":
+  version "0.1.0"
+  resolved "https://github.com/figment-networks/graph-juno-ts.git#29903f51ced1204ba6d5c81c0ab0c18c0d1c4a06"
   dependencies:
-    defer-to-connect "^1.0.1"
-
-"@truffle/blockchain-utils@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.npmjs.org/@truffle/blockchain-utils/-/blockchain-utils-0.0.11.tgz"
-  integrity sha512-9MyQ/20M96clhIcC7fVFIckGSB8qMsmcdU6iYt98HXJ9GOLNKsCaJFz1OVsJncVreYwTUhoEXTrVBc8zrmPDJQ==
-
-"@truffle/contract-schema@^3.0.14":
-  version "3.3.3"
-  resolved "https://registry.npmjs.org/@truffle/contract-schema/-/contract-schema-3.3.3.tgz"
-  integrity sha512-4bvcEoGycopJBPoCiqHP5Q72/1t/ixYS/pVHru+Rzvad641BgvoGrkd4YnyJ+E/MVb4ZLrndL7whmdGqV5B7SA==
-  dependencies:
-    ajv "^6.10.0"
-    crypto-js "^3.1.9-1"
-    debug "^4.1.0"
-
-"@truffle/error@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/@truffle/error/-/error-0.0.6.tgz"
-  integrity sha512-QUM9ZWiwlXGixFGpV18g5I6vua6/r+ZV9W/5DQA5go9A3eZUNPHPaTKMIQPJLYn6+ZV5jg5H28zCHq56LHF3yA==
+    as-proto "^0.2.3"
 
 "@types/bn.js@^5.1.0":
   version "5.1.0"
@@ -546,6 +520,11 @@ asn1@~0.2.3:
   integrity sha512-jxwzQpLQjSmWXgwaCZE9Nz+glAG01yF1QnWgbhGwHI5A6FRIEY6IVqtHhIepHqI7/kyEyQEagBC5mBEFlIYvdg==
   dependencies:
     safer-buffer "~2.1.0"
+
+assemblyscript-json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/assemblyscript-json/-/assemblyscript-json-1.1.0.tgz#49d38bc21f1ac36f2887528a35de6cf7d59c17be"
+  integrity sha512-UbE8ts8csTWQgd5TnSPN7MRV9NveuHv1bVnKmDLoo/tzjqxkmsZb3lu59Uk8H7SGoqdkDSEE049alx/nHnSdFw==
 
 assemblyscript@0.19.10:
   version "0.19.10"
