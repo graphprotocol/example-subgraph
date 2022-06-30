@@ -1,0 +1,21 @@
+specVersion: 0.0.5
+description: Validator Delegations Messages Example
+repository: https://github.com/graphprotocol/example-subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: cosmos
+    name: {{ name }}
+    network: {{ network }}
+    source:
+      startBlock: 0
+    mapping:
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Delegation
+        - Coin
+      messageHandlers:
+        - message: /cosmos.staking.v1beta1.MsgDelegate
+          handler: handleMsgDelegate
+      file: ./src/mapping.ts
