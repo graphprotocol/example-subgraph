@@ -1,4 +1,4 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.21;
 
 contract GravatarRegistry {
   event NewGravatar(uint id, address owner, string displayName, string imageUrl);
